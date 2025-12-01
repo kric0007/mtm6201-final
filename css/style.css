@@ -1,0 +1,331 @@
+:root {
+    --green01: 48, 50, 38;
+    --green05: #D4D7C4;
+    --green02: #555842;
+    --green03: #7D8165;
+    --green04: #A4A888;
+    --green07: #FEFFF8;
+    --green-nav: #555842;
+    --yellow02: #E8C66F;
+    --yellow03: #EFD79A;
+    --bs-tertiary-bg-rgb: var(--green01);
+    --bs-heading-color: #F9FFD3;
+    --gray02: #3F3F3F;
+    --navbar-height: 65px;
+    --sticky-footer-height: 60px;
+    --pink-link: #F1DDDA;
+    --brown04: #E9DED0;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    background-color: var(--green07);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Baloo Chettan 2';
+}
+
+h2,
+h3 {
+    color: rgb(48, 50, 38);
+}
+
+main {
+    padding-top: var(--navbar-height);
+}
+
+section {
+    height: calc(100vh - var(--navbar-height));
+}
+
+.navbar {
+    --bs-navbar-active-color: #E4AB1B;
+}
+
+.nav-link {
+    color: var(--green07);
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--yellow03);
+}
+
+.navbar .container-fluid {
+    height: var(--navbar-height);
+}
+
+/* for hamburger menu */
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FEFFF8' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.display-1 {
+    font-weight: 500;
+}
+
+.hero-text h2 {
+    color: var(--green07);
+}
+
+.hero {
+    background-image: url(../images/hero-img-mobile.png);
+    background-size: cover;
+}
+
+.btn-primary {
+    --bs-btn-bg: #E8C66F;
+    --bs-btn-color: #3F3F3F;
+    border: none;
+    --bs-btn-padding-x: 3rem;
+}
+
+.hero-text {
+    bottom: 25%;
+}
+
+.bg-green {
+    background-color: var(--green-nav);
+}
+
+.icon-button::before {
+    content: url(../images/icon-plant.png);
+    padding-right: 10px;
+}
+
+/* about-section */
+.about-image {
+    background: url(../images/story-image-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 35%;
+}
+
+p {
+    color: var(--gray02);
+}
+
+.about-text {
+    height: 45%;
+}
+
+.blurb-text {
+    background: url(../images/blurb-container-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 20%;
+}
+
+/* menu */
+.card {
+    background-color: var(--brown04);
+    --bs-card-border-radius: none;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* hours */
+.hours-table {
+    background-color: var(--green05);
+    border-top-right-radius: 25px;
+}
+
+/* "sticky footer" */
+.bg-dark {
+    background-color: rgb(28, 29, 22) !important;
+}
+
+.btn-secondary {
+    --bs-btn-bg: #E8C66F;
+    --bs-btn-color: #3F3F3F;
+    border: none;
+}
+
+/* footer */
+footer {
+    background-color: var(--green04);
+    padding-bottom: 5rem;
+    margin-bottom: var(--sticky-footer-height);
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/footer-design.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .9;
+}
+
+footer .nav-link {
+    text-transform: none;
+}
+
+footer a {
+    width: 100%;
+    max-width: 70%;
+}
+
+.btn-outline-primary {
+    --bs-btn-border-color: var(--green05);
+    --bs-btn-color: var(--gray02);
+}
+
+.copyright {
+    color: var(--green04);
+    font-size: .9rem;
+}
+
+/* Here starts custom css for partners page */
+.hero-partners {
+    background-image: url(../images/hero-partners-mobile.png);
+    background-size: cover;
+}
+
+.hero-partners-text {
+    bottom: 25%;
+}
+
+.hero-partners-text h2 {
+    color: var(--green07);
+}
+
+.mission-text {
+    background-image: url(../images/blurb-container-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.partners {
+    background-color: var(--green-nav);
+}
+
+.partners h2,
+.partners h3 {
+    color: var(--green05);
+}
+
+.carousel h3 {
+    font-weight: 500;
+}
+
+.carousel p {
+    color: var(--green07);
+}
+
+.lrg-text {
+    color: var(--green03);
+    font-size: 3.5rem;
+}
+
+/* Here starts menu page custom css */
+.hero-food {
+    background-image: url(../images/hero-food.png);
+    background-size: cover;
+}
+
+.hero-food-text {
+    bottom: 45%;
+}
+
+.food-blurb {
+    background-image: url(../images/blurb-container-mobile.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 20%;
+}
+
+.appetizers h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 10%;
+    text-align: center;
+}
+
+.appetizers h3 {
+    left: 0;
+    bottom: -5%;
+}
+
+h4 {
+    color: var(--green02);
+    text-transform: uppercase;
+}
+
+h5 {
+    color: var(--green03);
+}
+/* here starts the menu cards */
+.menu-item {
+    display: flex;
+}
+/* bar that slides when clicken on the dish image */
+.menu-item::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 110%;
+    background-color: var(--green05);
+    left: 48%;
+    top: -10px;
+    border-radius: 20px;
+}
+
+.menu-item .img-wrapper {
+    width: 49%;
+    border-bottom-left-radius: 20px;
+}
+
+.menu-item .menu-item-content {
+    margin-left: 0.5rem;
+    width: 50%;
+}
+/* this will hide dish description */
+.menu-item p {
+    display: none;
+}
+/* when click, this will replace the image */
+.menu-item.active {
+    background-color: var(--green05);
+    border-bottom-left-radius: 20px;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.menu-item.active .img {
+    display: none;
+}
+/* bar will slide to the left */
+.menu-item.active::before {
+    left: 0;
+}
+
+.menu-item.active .menu-item-content {
+    display: flex;
+    margin-left: 0;
+}
+
+.menu-item.active p {
+    display: block;
+} /*here ends custom style of card active and inactive*/

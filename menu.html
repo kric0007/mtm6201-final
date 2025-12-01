@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +32,7 @@
                 <div class="collapse navbar-collapse z-1 bg-green" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-end pe-5" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-end pe-5" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link text-end pe-5" href="./menu.html">Menu</a>
@@ -55,49 +52,45 @@
         </nav>
     </header>
     <main>
-        <section class="hero container position-relative">
-            <div class="hero-text position-absolute">
-                <h1 class="display-1 fw-bold">Plant Palette</h1>
-                <h2>Sophisticated Dining.</h2>
-                <h2>Purely Plant-Based.</h2>
-                <button type="button" class="icon-button btn btn-primary btn-lg mt-4 fw-bold">Book Now</button>
+        <section class="hero-food position-relative">
+            <div class=" hero-food-text container position-absolute">
+                <h1 class="display-1 fw-bold">Food</h1>
             </div>
+            <p
+                class="food-blurb position-absolute left-0 bottom-0 fw-bold fs-4 text-center w-100 d-flex justify-content-center align-items-center p-3 m-0">
+                Savour a seasonal journey curated by our talented Chef.</p>
         </section>
-        <section class="about">
-            <div class="about-image"></div>
-            <div class="about-text d-flex flex-column justify-content-center container">
-                <h2 class="display-3 mb-3 fw-bold">Our Story</h2>
-                <p>
-                    At Plant Palette, we honour nature’s finest ingredients through thoughtful, plant-first cuisine.
-                    Every dish is crafted with care, presented with elegance, and served in a calm, refined setting.
-                </p>
-                <div>
-                    <a class="btn btn-primary btn-lg mt-4 fw-bold" href="">About Us</a>
-                </div>
-            </div>
-            <div class="blurb-text d-flex align-items-center container">
-                <p class="text-center fw-bold m-0 pt-3">Join us for an evening where simplicity meets sophistication.
-                </p>
-            </div>
-        </section>
-        <section class="menu h-100">
-            <div class="card">
-                <img src="./images/food-mobile.png" class="card-img-top" alt="vegan dish in a fine dine cusine">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold">Food</h3>
-                    <p class="card-text">Savour a seasonal journey curated by our talented Chef.</p>
-                    <a href="#" class="btn btn-primary fw-bold">Explore our Menu</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/drink-mobile.png" class="card-img-top" alt="cocktails in different glasses">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold">Drinks</h3>
-                    <p class="card-text">Explore our bespoke cocktails and crafted beverages.</p>
-                    <a href="#" class="btn btn-primary fw-bold">Discover our Drinks </a>
-                </div>
-            </div>
 
+        <section class="menu">
+            <div class="appetizers position-relative mb-4">
+                <h2>Menu</h2>
+                <h3 class="appetizers fw-bold position-absolute display-3 ms-3">Appetizers</h3>
+            </div>
+            <!-- item 1 -->
+            <div class="menu-item position-relative mb-5">
+                <div class="img-wrapper">
+                    <img width="100%" height="auto" src="images/spring-roll.png" alt="">
+                </div>
+                <div class="menu-item-content gap-3 mb-2">
+                    <h4>Spring Roll</h4>
+                    <h5>$9</h5>
+                </div>
+                <p>Fresh, colourful vegetables and herbs wrapped in rice paper, served with a homemade peanut dipping
+                    sauce. Our vegetables are sourced from local organic farms, ensuring maximum freshness and flavour.
+                </p>
+            </div> <!--here ends item 1-->
+              <!-- item 2 -->
+            <div class="menu-item position-relative mb-5">
+                <div class="img-wrapper">
+                    <img width="100%" height="auto" src="images/spring-roll.png" alt="">
+                </div>
+                <div class="menu-item-content gap-3 mb-2">
+                    <h4>Spice Chickpea Hummus</h4>
+                    <h5>$8</h5>
+                </div>
+                <p>A creamy blend of organic chickpeas, tahini, garlic, and a kick of chili flakes, served with house-baked pita chips and seasonal crudités. Chickpeas are locally sourced from our partner farm. 
+                </p>
+            </div> <!--here ends item 2-->
         </section>
 
         <section class="hours h-50">
@@ -112,10 +105,13 @@
                 <p class="mb-4">Sunday: 2 - 10 pm</p>
             </div>
         </section>
-        <div class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
-            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i> Call
+        <div
+            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
+            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i>
+                Call
                 Us</button>
-            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-calendar-check-fill"></i> Book
+            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i
+                    class="bi bi-calendar-check-fill"></i> Book
                 Now</button>
         </div>
     </main>
@@ -165,10 +161,7 @@
         <p class="copyright position-absolute bottom-0 mb-1">&copy;Copyright @ Plant Palette 2025 All rights
             reserved</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
-
-</html>

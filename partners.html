@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Palette</title>
+    <title>Partners</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
@@ -35,7 +32,7 @@
                 <div class="collapse navbar-collapse z-1 bg-green" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-end pe-5" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-end pe-5" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link text-end pe-5" href="./menu.html">Menu</a>
@@ -44,7 +41,7 @@
                             <a class="nav-link text-end pe-5" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-end pe-5" href="./partners.html">Partners</a>
+                            <a class="nav-link text-end pe-5" href="#">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-end pe-5" href="#">Catering</a>
@@ -55,49 +52,78 @@
         </nav>
     </header>
     <main>
-        <section class="hero container position-relative">
-            <div class="hero-text position-absolute">
-                <h1 class="display-1 fw-bold">Plant Palette</h1>
-                <h2>Sophisticated Dining.</h2>
-                <h2>Purely Plant-Based.</h2>
-                <button type="button" class="icon-button btn btn-primary btn-lg mt-4 fw-bold">Book Now</button>
+        <section class="hero-partners position-relative">
+            <div class=" hero-partners-text container position-absolute">
+                <h1 class="display-1 fw-bold">Rooted in Local</h1>
+                <h2>From soil to table - supporting farms in our community.</h2>
+                <button type="button" class="icon-button btn btn-primary btn-lg mt-4 fw-bold">Meet Our Partners</button>
             </div>
-        </section>
-        <section class="about">
-            <div class="about-image"></div>
-            <div class="about-text d-flex flex-column justify-content-center container">
-                <h2 class="display-3 mb-3 fw-bold">Our Story</h2>
-                <p>
-                    At Plant Palette, we honour nature’s finest ingredients through thoughtful, plant-first cuisine.
-                    Every dish is crafted with care, presented with elegance, and served in a calm, refined setting.
-                </p>
-                <div>
-                    <a class="btn btn-primary btn-lg mt-4 fw-bold" href="">About Us</a>
-                </div>
-            </div>
-            <div class="blurb-text d-flex align-items-center container">
-                <p class="text-center fw-bold m-0 pt-3">Join us for an evening where simplicity meets sophistication.
+            <div class="mission-text d-flex flex-column container">
+                <h2 class="display-3 fw-bold">Value & Mission</h2>
+                <p class="fw-bold m-0">Rooted in sustainability and refinement, we bring together exceptional taste and
+                    ethical sourcing to nourish body and planet.
                 </p>
             </div>
         </section>
-        <section class="menu h-100">
-            <div class="card">
-                <img src="./images/food-mobile.png" class="card-img-top" alt="vegan dish in a fine dine cusine">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold">Food</h3>
-                    <p class="card-text">Savour a seasonal journey curated by our talented Chef.</p>
-                    <a href="#" class="btn btn-primary fw-bold">Explore our Menu</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/drink-mobile.png" class="card-img-top" alt="cocktails in different glasses">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold">Drinks</h3>
-                    <p class="card-text">Explore our bespoke cocktails and crafted beverages.</p>
-                    <a href="#" class="btn btn-primary fw-bold">Discover our Drinks </a>
-                </div>
+
+        <section>
+            <div class="partners pt-5 pb-3 container">
+                <h2 class="display-3 fw-bold">Meet our Partners</h2>
             </div>
 
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/partner-1.png" class="d-block w-100"
+                            alt="one of the partners picking apples">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="mb-0">Willow & Root Farm</h3>
+                            <p>Haldimand Heights, Ontario</p>
+                            <button type="button" class="btn btn-primary fw-bold mb-1">Know More</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/partner-2.png" class="d-block w-100"
+                            alt="one of the partners planting lettuce">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="mb-0">Sunrise Fern Farm</h3>
+                            <p>Cedar Ridge, Ontario</p>
+                            <button type="button" class="btn btn-primary fw-bold mb-1">Know More</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/partner-3.png" class="d-block w-100"
+                            alt="one of the partners with organic food">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="mb-0">Meadow & Moss Acres</h3>
+                            <p>Pine Hollow, Ontario</p>
+                            <button type="button" class="btn btn-primary fw-bold mb-1">Know More</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="difference-section">
+            <h2 class="display-3 fw-bold text-center">How we make a <span class="lrg-text">difference</span></h2>
         </section>
 
         <section class="hours h-50">
@@ -112,10 +138,13 @@
                 <p class="mb-4">Sunday: 2 - 10 pm</p>
             </div>
         </section>
-        <div class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
-            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i> Call
+        <div
+            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
+            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i>
+                Call
                 Us</button>
-            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-calendar-check-fill"></i> Book
+            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i
+                    class="bi bi-calendar-check-fill"></i> Book
                 Now</button>
         </div>
     </main>
@@ -165,10 +194,7 @@
         <p class="copyright position-absolute bottom-0 mb-1">&copy;Copyright @ Plant Palette 2025 All rights
             reserved</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
-
-</html>
