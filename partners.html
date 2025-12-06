@@ -21,18 +21,20 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <img src="./images/logo.png" alt="plant palette logo">
+                <img class="d-block d-sm-none" src="./images/logo.png" alt="plant palette logo">
+                <img class="d-none d-lg-block" src="./images/logo.png" alt="plant palette logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse z-1 bg-green" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="navbar-collapse z-1 bg-green d-md-flex align-items-center justify-content-between collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-end pe-5" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link text-end pe-5" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link text-end pe-5" href="./menu.html">Menu</a>
@@ -41,34 +43,46 @@
                             <a class="nav-link text-end pe-5" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-end pe-5" href="#">Partners</a>
+                            <a class="nav-link text-end active pe-5" href="#">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-end pe-5" href="#">Catering</a>
                         </li>
                     </ul>
+                    <button type="button" class="icon-button btn btn-primary btn-lg fw-bold d-none d-md-block">Book <span
+                            class="d-none d-lg-inline-block">Now</span></button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="hero-partners position-relative">
-            <div class=" hero-partners-text container position-absolute">
+        <section class="hero-partners d-flex align-items-center position-relative">
+            <div class="hero-partners-text container p-3">
                 <h1 class="display-1 fw-bold">Rooted in Local</h1>
                 <h2>From soil to table - supporting farms in our community.</h2>
                 <button type="button" class="icon-button btn btn-primary btn-lg mt-4 fw-bold">Meet Our Partners</button>
             </div>
-            <div class="mission-text d-flex flex-column container">
-                <h2 class="display-3 fw-bold">Value & Mission</h2>
-                <p class="fw-bold m-0">Rooted in sustainability and refinement, we bring together exceptional taste and
-                    ethical sourcing to nourish body and planet.
-                </p>
+            <div class="mission-text position-absolute left-0 bottom-0 w-100 d-flex flex-column p-sm-3 m-0 pb-5">
+                <div class="row">
+                    <div class="d-none d-md-flex align-items-end justify-content-center col">
+                        <img class="w-75" src="./images/rooted-img.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h2 class="display-3 fw-bold d-flex align-items-center mt-3 p-3">Value & Mission</h2>
+                        <p class="fw-bold m-0 p-3 pt-sm-0">Rooted in sustainability and refinement, we bring together
+                            exceptional
+                            taste
+                            and
+                            ethical sourcing to nourish body and planet.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div class="partners pt-5 pb-3 container">
-                <h2 class="display-3 fw-bold">Meet our Partners</h2>
+        <section class="h-auto partners-section position-relative">
+            <div class="partners pt-5 pb-3">
+                <h2 class="display-3 fw-bold p-3">Meet our Farmers</h2>
             </div>
 
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -122,24 +136,58 @@
             </div>
         </section>
 
-        <section class="difference-section">
-            <h2 class="display-3 fw-bold text-center">How we make a <span class="lrg-text">difference</span></h2>
+        <section class="difference-section position-relative mb-5">
+            <h2 class="display-3 fw-bold text-center mt-3">How we make a <span class="lrg-text d-md-block">difference</span></h2>
+            <div class="difference-insights position-relative">
+                <div class="difference-insights-container position-relative">
+                    <div class="insight" data-bs-toggle="modal" data-bs-target="#insightModal1">
+                        <div class="w-100 h-100 insight-icon"></div>
+                    </div>
+                    <div class="insight" data-bs-toggle="modal" data-bs-target="#insightModal2">
+                        <div class="w-100 h-100 insight-icon"></div>
+                    </div>
+                    <div class="insight" data-bs-toggle="modal" data-bs-target="#insightModal3">
+                        <div class="w-100 h-100 insight-icon"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute d-none d-md-block w-50 insight-images-md">
+                <div class="insight-images-container position-relative">
+                    <img src="./images/difference-img-1.jpg" alt="Water pouring down on a hand">
+                    <img src="./images/difference-img-2.jpg" alt="woman harvesting cabbage">
+                </div>
+            </div>
+            <div class="insight-images-container position-relative d-block d-md-none">
+                <img src="./images/difference-img-1.jpg" alt="Water pouring down on a hand">
+                <img src="./images/difference-img-2.jpg" alt="woman harvesting cabbage">
+            </div>
+            <div class="partners cta-container p-5 d-flex flex-column align-items-center justify-content-center">
+                <button class="btn btn-primary">Partner with Us</button>
+                <button class="btn btn-primary btn-lg mt-4">Sign up for sustainability updates</button>
+            </div>
         </section>
 
-        <section class="hours h-50">
-            <h2 class="display-3 mb-3 fw-bold mt-5">Opening Hours</h2>
-            <div class="hours-table d-flex flex-column align-items-center">
-                <p class="mt-4 mb-1">Monday: Closed</p>
-                <p class="mb-1">Tuesday: 2 - 10 pm</p>
-                <p class="mb-1">Wednesday: 2 - 10 pm</p>
-                <p class="mb-1">Thursday: 2 - 10 pm</p>
-                <p class="mb-1">Friday: 2 - 10 pm</p>
-                <p class="mb-1">Saturday: 2 - 10 pm</p>
-                <p class="mb-4">Sunday: 2 - 10 pm</p>
+        <section class="menu hours row m-sm-auto container overflow-hidden">
+            <div class="row">
+                <div class="d-none d-md-block col-6 p-4">
+                    <img class="h-100 w-100 mw-100" src="./images/opening-image.png" alt="">
+                </div>
+                <div class="partners-opening col-12 col-md-6 p-0">
+                    <h2 class="display-sm-3 px-3 mb-3 fw-bold mt-5">Opening Hours</h2>
+                    <div class="hours-table d-flex flex-column align-items-center h-100">
+                        <p class="mt-4 mb-1">Monday: Closed</p>
+                        <p class="mb-1">Tuesday: 2 - 10 pm</p>
+                        <p class="mb-1">Wednesday: 2 - 10 pm</p>
+                        <p class="mb-1">Thursday: 2 - 10 pm</p>
+                        <p class="mb-1">Friday: 2 - 10 pm</p>
+                        <p class="mb-1">Saturday: 2 - 10 pm</p>
+                        <p class="mb-4">Sunday: 2 - 10 pm</p>
+                    </div>
+                </div>
             </div>
         </section>
         <div
-            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
+            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1 d-md-none d-flex">
             <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i>
                 Call
                 Us</button>
@@ -147,9 +195,41 @@
                     class="bi bi-calendar-check-fill"></i> Book
                 Now</button>
         </div>
+        <!-- Modals -->
+        <div class="modal fade" id="insightModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body pt-4 pb-3 ps-5 pe-2">
+                        <p class="text-center">We source 75% of our ingredients from local farms, supporting regional
+                            agriculture and reducing transportation emissions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="insightModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body pt-4 pb-3 ps-5 pe-2">
+                        <p class="text-center">By choosing plant-based ingredients, we have reduced our annual CO2
+                            emissions by 1.2 tonnes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="insightModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body pt-4 pb-3 ps-5 pe-2">
+                        <p class="text-center">Our sustainable practices have saved approximately 200,000L of water
+                            annually</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="container position-relative">
-        <div class="d-flex align-items-baseline">
+    <footer class="position-relative">
+        <div class="d-flex align-items-sm-baseline align-items-md-center justify-content-md-between">
+            <img class="d-none d-md-block" src="./images/logo.png" alt="logo" width="100">
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -178,7 +258,7 @@
                 </svg>
             </div>
         </div>
-        <div class="d-flex flex-column gap-2 align-items-center">
+        <div class="d-flex flex-column gap-2 align-items-center pt-4">
             <a class="btn btn-outline-primary" href=""><i class="bi bi-geo-alt-fill"></i> Ottawa, Canada</a>
 
             <a class="btn btn-outline-primary" href=""><i class="bi bi-telephone-fill"></i> +1 111 1111 1111</a>

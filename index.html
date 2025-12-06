@@ -24,18 +24,20 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <img src="./images/logo.png" alt="plant palette logo">
+                <img class="d-block d-sm-none" src="./images/logo.png" alt="plant palette logo">
+                <img class="d-none d-lg-block" src="./images/logo.png" alt="plant palette logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse z-1 bg-green" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="navbar-collapse z-1 bg-green d-md-flex align-items-center justify-content-between collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-end pe-5" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-end pe-5 active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link text-end pe-5" href="./menu.html">Menu</a>
@@ -50,13 +52,14 @@
                             <a class="nav-link text-end pe-5" href="#">Catering</a>
                         </li>
                     </ul>
+                    <button type="button" class="icon-button btn btn-primary btn-lg fw-bold d-none d-md-block">Book <span class="d-none d-lg-inline-block">Now</span></button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="hero container position-relative">
-            <div class="hero-text position-absolute">
+        <section class="hero p-3 position-relative">
+            <div class="hero-text col-12 col-md-6 position-absolute">
                 <h1 class="display-1 fw-bold">Plant Palette</h1>
                 <h2>Sophisticated Dining.</h2>
                 <h2>Purely Plant-Based.</h2>
@@ -64,63 +67,82 @@
             </div>
         </section>
         <section class="about">
-            <div class="about-image"></div>
-            <div class="about-text d-flex flex-column justify-content-center container">
-                <h2 class="display-3 mb-3 fw-bold">Our Story</h2>
-                <p>
-                    At Plant Palette, we honour nature’s finest ingredients through thoughtful, plant-first cuisine.
-                    Every dish is crafted with care, presented with elegance, and served in a calm, refined setting.
-                </p>
-                <div>
-                    <a class="btn btn-primary btn-lg mt-4 fw-bold" href="">About Us</a>
+            <div class="about-image-container container p-md-3">
+                <div class="about-image-wrapper col-12 col-md-6">
+                    <div class="about-image"></div>
+                </div>
+                <div class="about-text col-12 col-md-6 d-flex flex-column justify-content-center p-3">
+                    <h2 class="display-3 mb-3 fw-bold">Our Story</h2>
+                    <p>
+                        At Plant Palette, we honour nature's finest ingredients through thoughtful, plant-first cuisine.
+                        Every dish is crafted with care, presented with elegance, and served in a calm, refined setting.
+                    </p>
+                    <div>
+                        <a class="btn btn-primary btn-lg mt-4 fw-bold" href="">About Us</a>
+                    </div>
                 </div>
             </div>
-            <div class="blurb-text d-flex align-items-center container">
-                <p class="text-center fw-bold m-0 pt-3">Join us for an evening where simplicity meets sophistication.
+            <div class="blurb-text d-flex align-items-center p-3">
+                <p class="text-center fw-bold m-0 pt-sm-3 pt-md-5">Join us for an evening where simplicity meets
+                    sophistication.
                 </p>
             </div>
         </section>
         <section class="menu h-100">
-            <div class="card">
-                <img src="./images/food-mobile.png" class="card-img-top" alt="vegan dish in a fine dine cusine">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold">Food</h3>
-                    <p class="card-text">Savour a seasonal journey curated by our talented Chef.</p>
-                    <a href="#" class="btn btn-primary fw-bold">Explore our Menu</a>
+            <div class="row">
+                <div class="card col-12 col-md-6 pe-0">
+                    <img src="./images/food-mobile.png" class="card-img-top h-75"
+                        alt="vegan dish in a fine dine cusine">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Food</h3>
+                        <p class="card-text">Savour a seasonal journey curated by our talented Chef.</p>
+                        <a href="./menu.html" class="btn btn-primary fw-bold">Explore our Menu</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/drink-mobile.png" class="card-img-top" alt="cocktails in different glasses">
-                <div class="card-body">
-                    <h3 class="card-title fw-bold">Drinks</h3>
-                    <p class="card-text">Explore our bespoke cocktails and crafted beverages.</p>
-                    <a href="#" class="btn btn-primary fw-bold">Discover our Drinks </a>
+                <div class="card col-12 col-md-6 pe-0 p-md-0">
+                    <img src="./images/drink-mobile.png" class="card-img-top h-75" alt="cocktails in different glasses">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">Drinks</h3>
+                        <p class="card-text">Explore our bespoke cocktails and crafted beverages.</p>
+                        <a href="#" class="btn btn-primary fw-bold">Discover our Drinks </a>
+                    </div>
                 </div>
             </div>
 
         </section>
 
-        <section class="hours h-50">
-            <h2 class="display-3 mb-3 fw-bold mt-5">Opening Hours</h2>
-            <div class="hours-table d-flex flex-column align-items-center">
-                <p class="mt-4 mb-1">Monday: Closed</p>
-                <p class="mb-1">Tuesday: 2 - 10 pm</p>
-                <p class="mb-1">Wednesday: 2 - 10 pm</p>
-                <p class="mb-1">Thursday: 2 - 10 pm</p>
-                <p class="mb-1">Friday: 2 - 10 pm</p>
-                <p class="mb-1">Saturday: 2 - 10 pm</p>
-                <p class="mb-4">Sunday: 2 - 10 pm</p>
+        <section class="home hours h-50 row m-sm-auto overflow-hidden container">
+            <div class="row">
+                <div class="d-none d-md-block col-6 p-4">
+                    <img class="w-100 mw-100" src="./images/opening-image.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 p-0">
+                    <h2 class="display-sm-3 px-3 mb-3 fw-bold mt-5">Opening Hours</h2>
+                    <div class="hours-table d-flex flex-column align-items-center h-100">
+                        <p class="mt-4 mb-1">Monday: Closed</p>
+                        <p class="mb-1">Tuesday: 2 - 10 pm</p>
+                        <p class="mb-1">Wednesday: 2 - 10 pm</p>
+                        <p class="mb-1">Thursday: 2 - 10 pm</p>
+                        <p class="mb-1">Friday: 2 - 10 pm</p>
+                        <p class="mb-1">Saturday: 2 - 10 pm</p>
+                        <p class="mb-4">Sunday: 2 - 10 pm</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <div class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
-            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i> Call
+        <div
+            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1 d-md-none d-flex">
+            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i>
+                Call
                 Us</button>
-            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-calendar-check-fill"></i> Book
+            <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i
+                    class="bi bi-calendar-check-fill"></i> Book
                 Now</button>
         </div>
     </main>
-    <footer class="container position-relative">
-        <div class="d-flex align-items-baseline">
+    <footer class="position-relative">
+        <div class="d-flex align-items-sm-baseline align-items-md-center justify-content-md-between">
+            <img class="d-none d-md-block" src="./images/logo.png" alt="logo" width="100">
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -149,7 +171,7 @@
                 </svg>
             </div>
         </div>
-        <div class="d-flex flex-column gap-2 align-items-center">
+        <div class="d-flex flex-column gap-2 align-items-center pt-4">
             <a class="btn btn-outline-primary" href=""><i class="bi bi-geo-alt-fill"></i> Ottawa, Canada</a>
 
             <a class="btn btn-outline-primary" href=""><i class="bi bi-telephone-fill"></i> +1 111 1111 1111</a>

@@ -21,21 +21,23 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <img src="./images/logo.png" alt="plant palette logo">
+                <img class="d-block d-sm-none" src="./images/logo.png" alt="plant palette logo">
+                <img class="d-none d-lg-block" src="./images/logo.png" alt="plant palette logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse z-1 bg-green" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="navbar-collapse z-1 bg-green d-md-flex align-items-center justify-content-between collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-end pe-5" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link text-end pe-5" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link text-end pe-5" href="./menu.html">Menu</a>
+                            <a class="nav-link text-end pe-5 active" href="./menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-end pe-5" href="#">About</a>
@@ -47,13 +49,14 @@
                             <a class="nav-link text-end pe-5" href="#">Catering</a>
                         </li>
                     </ul>
+                    <button type="button" class="icon-button btn btn-primary btn-lg fw-bold d-none d-md-block">Book <span class="d-none d-lg-inline-block">Now</span></button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="hero-food position-relative">
-            <div class=" hero-food-text container position-absolute">
+        <section class="hero-food d-flex align-items-center position-relative">
+            <div class="hero-food-text container">
                 <h1 class="display-1 fw-bold">Food</h1>
             </div>
             <p
@@ -61,52 +64,170 @@
                 Savour a seasonal journey curated by our talented Chef.</p>
         </section>
 
-        <section class="menu">
+        <section class="menu container">
             <div class="appetizers position-relative mb-4">
                 <h2>Menu</h2>
                 <h3 class="appetizers fw-bold position-absolute display-3 ms-3">Appetizers</h3>
             </div>
-            <!-- item 1 -->
-            <div class="menu-item position-relative mb-5">
-                <div class="img-wrapper">
-                    <img width="100%" height="auto" src="images/spring-roll.png" alt="">
-                </div>
-                <div class="menu-item-content gap-3 mb-2">
-                    <h4>Spring Roll</h4>
-                    <h5>$9</h5>
-                </div>
-                <p>Fresh, colourful vegetables and herbs wrapped in rice paper, served with a homemade peanut dipping
-                    sauce. Our vegetables are sourced from local organic farms, ensuring maximum freshness and flavour.
-                </p>
-            </div> <!--here ends item 1-->
-              <!-- item 2 -->
-            <div class="menu-item position-relative mb-5">
-                <div class="img-wrapper">
-                    <img width="100%" height="auto" src="images/spring-roll.png" alt="">
-                </div>
-                <div class="menu-item-content gap-3 mb-2">
-                    <h4>Spice Chickpea Hummus</h4>
-                    <h5>$8</h5>
-                </div>
-                <p>A creamy blend of organic chickpeas, tahini, garlic, and a kick of chili flakes, served with house-baked pita chips and seasonal crudités. Chickpeas are locally sourced from our partner farm. 
-                </p>
-            </div> <!--here ends item 2-->
+            <div class="row">
+                <!-- item 1 -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/spring-roll.jpg" alt="veggy spring roll">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Spring Roll</h4>
+                        <h5>$9</h5>
+                    </div>
+                    <p>Fresh, colourful vegetables and herbs wrapped in rice paper, served with a homemade peanut
+                        dipping
+                        sauce. Our vegetables are sourced from local organic farms, ensuring maximum freshness and
+                        flavour.
+                    </p>
+                </div> <!--here ends item 1-->
+                <!-- item 2 -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/hummus.jpg" alt="chikpea hummus">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Spicy Chickpea Hummus</h4>
+                        <h5>$8</h5>
+                    </div>
+                    <p>A creamy blend of organic chickpeas, tahini, garlic, and a kick of chili flakes, served with
+                        house-baked pita chips and seasonal crudités. Chickpeas are locally sourced from our partner
+                        farm.
+                    </p>
+                </div> <!--here ends item 2-->
+                <!-- item 3 -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/stuff-mush.png" alt="stuffed mushrooms">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Stuffed Mushrooms</h4>
+                        <h5>$10</h5>
+                    </div>
+                    <p>Portobello mushrooms stuffed with quinoa, spinach, and local herbs, baked to perfection. These
+                        mushrooms come from a family-run farm that practices organic growing methods.
+                    </p>
+                </div> <!--here ends item 3-->
+            </div>
+            <h3 class="appetizers fw-bold display-3 ms-3">Mains</h3>
+            <!-- item 1 from mains -->
+            <div class="row">
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/burger.png" alt="vegan buerger">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Plant Palette Burger</h4>
+                        <h5>$14</h5>
+                    </div>
+                    <p>A hearty black bean and quinoa patty topped with fresh avocado, lettuce, tomato, and our
+                        house-made
+                        vegan aioli, served on a whole-grain bun. All ingredients are sourced from local farms,
+                        showcasing
+                        the best of our region’s harvest.
+                    </p>
+                </div> <!--here ends item 1 mains-->
+                <!-- item 2 from mains -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/pasta.jpg" alt="pasta fettucine">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Creamy Cashew Alfredo Pasta</h4>
+                        <h5>$16</h5>
+                    </div>
+                    <p>Fettuccine tossed in a rich cashew cream sauce, mixed with seasonal vegetables like zucchini and
+                        spinach. Cashews are sourced from Fair Trade suppliers, and our seasonal veggies come straight
+                        from
+                        nearby farms.
+                    </p>
+                </div> <!--here ends item 2 mains-->
+                <!-- item 3 from mains -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/taco.jpg" alt="vegan tacos">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Spicy Lentil Taco</h4>
+                        <h5>$12</h5>
+                    </div>
+                    <p>Soft corn tortillas filled with spiced lentils, topped with avocado salsa and pickled red onions.
+                        The
+                        lentils are sourced from organic farms, emphasizing sustainable agriculture.
+                    </p>
+                </div> <!--here ends item 3 mains-->
+            </div>
+            <h3 class="appetizers fw-bold display-3 ms-3">Sides</h3>
+            <div class="row">
+                <!-- item 1 sides -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/quinoa-salad.jpg" alt="quinoa salad">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Quinoa Salad</h4>
+                        <h5>$6</h5>
+                    </div>
+                    <p> A refreshing mix of local quinoa, cucumber, cherry tomatoes, and parsley, dressed with lemon
+                        vinaigrette.
+                    </p>
+                </div> <!--here ends item 1 sides-->
+                <!-- item 2 sides -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/sweet-fries.jpg" alt="basket of sweet potato fries">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Sweet Potato Fries</h4>
+                        <h5>$5</h5>
+                    </div>
+                    <p> Crispy, oven-baked sweet potato fries served with a smoky chipotle mayo. Sweet potatoes are
+                        sourced
+                        from local farmers who practice regenerative agriculture.
+                    </p>
+                </div> <!--here ends item 2 sides-->
+                <!-- item 3 sides -->
+                <div class="menu-item position-relative mb-5 col-12 col-md-4">
+                    <div class="img-wrapper">
+                        <img src="images/vegetables.jpg" alt="steamed colorful vegetables">
+                    </div>
+                    <div class="menu-item-content gap-3 mb-2">
+                        <h4>Sautéed Seasonal Greens</h4>
+                        <h5>$7</h5>
+                    </div>
+                    <p> Stir-fried greens from our local farms, lightly seasoned and tossed with garlic and olive oil
+                        for a
+                        fresh, nutritious side.
+                    </p>
+                </div> <!--here ends item 3 sides-->
+            </div>
         </section>
 
-        <section class="hours h-50">
-            <h2 class="display-3 mb-3 fw-bold mt-5">Opening Hours</h2>
-            <div class="hours-table d-flex flex-column align-items-center">
-                <p class="mt-4 mb-1">Monday: Closed</p>
-                <p class="mb-1">Tuesday: 2 - 10 pm</p>
-                <p class="mb-1">Wednesday: 2 - 10 pm</p>
-                <p class="mb-1">Thursday: 2 - 10 pm</p>
-                <p class="mb-1">Friday: 2 - 10 pm</p>
-                <p class="mb-1">Saturday: 2 - 10 pm</p>
-                <p class="mb-4">Sunday: 2 - 10 pm</p>
+        <section class="menu hours row m-sm-auto container">
+            <div class="row">
+                <div class="d-none d-md-block col-6 p-4">
+                    <img class="h-100 w-100 mw-100" src="./images/opening-image.png" alt="">
+                </div>
+                <div class="col-12 col-md-6 p-0">
+                    <h2 class="display-sm-3 px-3 mb-3 fw-bold mt-5">Opening Hours</h2>
+                    <div class="hours-table d-flex flex-column align-items-center h-100">
+                        <p class="mt-4 mb-1">Monday: Closed</p>
+                        <p class="mb-1">Tuesday: 2 - 10 pm</p>
+                        <p class="mb-1">Wednesday: 2 - 10 pm</p>
+                        <p class="mb-1">Thursday: 2 - 10 pm</p>
+                        <p class="mb-1">Friday: 2 - 10 pm</p>
+                        <p class="mb-1">Saturday: 2 - 10 pm</p>
+                        <p class="mb-4">Sunday: 2 - 10 pm</p>
+                    </div>
+                </div>
             </div>
         </section>
         <div
-            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1">
+            class="sticky-footer bg-dark d-flex align-items-center justify-content-center gap-2 p-2 position-fixed bottom-0 left-0 w-100 z-1 d-md-none d-flex">
             <button type="button" class="btn btn-secondary fw-bold btn-lg w-50"><i class="bi bi-telephone-fill"></i>
                 Call
                 Us</button>
@@ -115,8 +236,9 @@
                 Now</button>
         </div>
     </main>
-    <footer class="container position-relative">
-        <div class="d-flex align-items-baseline">
+    <footer class="position-relative">
+        <div class="d-flex align-items-sm-baseline align-items-md-center justify-content-md-between">
+            <img class="d-none d-md-block" src="./images/logo.png" alt="logo" width="100">
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -145,7 +267,7 @@
                 </svg>
             </div>
         </div>
-        <div class="d-flex flex-column gap-2 align-items-center">
+        <div class="d-flex flex-column gap-2 align-items-center pt-4">
             <a class="btn btn-outline-primary" href=""><i class="bi bi-geo-alt-fill"></i> Ottawa, Canada</a>
 
             <a class="btn btn-outline-primary" href=""><i class="bi bi-telephone-fill"></i> +1 111 1111 1111</a>
