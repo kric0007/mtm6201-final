@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Organization">
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
@@ -52,13 +52,17 @@
                             <a class="nav-link text-end pe-5" href="#">Catering</a>
                         </li>
                     </ul>
-                    <button type="button" class="icon-button btn btn-primary btn-lg fw-bold d-none d-md-block">Book <span class="d-none d-lg-inline-block">Now</span></button>
+                    <button type="button" class="icon-button btn btn-primary btn-lg fw-bold d-none d-md-block">Book
+                        <span class="d-none d-lg-inline-block">Now</span></button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <section class="hero p-3 position-relative">
+            <ul class="skip-links pt-5 mt-5">
+                <li><a href="#menu-section">Skip to Menu</a></li>
+            </ul>
             <div class="hero-text col-12 col-md-6 position-absolute">
                 <h1 class="display-1 fw-bold">Plant Palette</h1>
                 <h2>Sophisticated Dining.</h2>
@@ -88,7 +92,7 @@
                 </p>
             </div>
         </section>
-        <section class="menu h-100">
+        <section id="menu-section" class="menu h-100">
             <div class="row">
                 <div class="card col-12 col-md-6 pe-0">
                     <img src="./images/food-mobile.png" class="card-img-top h-75"
@@ -172,11 +176,15 @@
             </div>
         </div>
         <div class="d-flex flex-column gap-2 align-items-center pt-4">
-            <a class="btn btn-outline-primary" href=""><i class="bi bi-geo-alt-fill"></i> Ottawa, Canada</a>
+            <a itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"
+                aria-label="Click here to get location" class="btn btn-outline-primary" href=""><i
+                    class="bi bi-geo-alt-fill"></i> Ottawa, Canada</a>
 
-            <a class="btn btn-outline-primary" href=""><i class="bi bi-telephone-fill"></i> +1 111 1111 1111</a>
+            <a itemprop="telephone" aria-label="click here to call" class="btn btn-outline-primary" href=""><i
+                    class="bi bi-telephone-fill"></i> +1 111 1111 1111</a>
 
-            <a class="btn btn-outline-primary" href=""><i class="bi bi-envelope-fill"></i>
+            <a itemprop="email" aria-label="Click here to send an email" class="btn btn-outline-primary" href=""><i
+                    class="bi bi-envelope-fill"></i>
                 contact@plantpalette.com</a>
         </div>
         <div class="d-flex gap-2 justify-content-center mt-2">
