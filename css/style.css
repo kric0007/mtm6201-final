@@ -61,7 +61,10 @@ body {
 .btn-secondary:hover {
     border: 1px solid #E4AB1B;
 }
-
+.btn-outline-primary {
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: var(--yellow03);
+}
 h1,
 h2,
 h3,
@@ -76,7 +79,7 @@ h3 {
 
 main {
     padding-top: var(--navbar-height);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 section {
@@ -566,7 +569,6 @@ h5 {
 
     /* Partners */
     .hero-partners {
-        height: 100%;
        background-image: url(../images/hero-partners-large-screen.png);
     }
 
@@ -666,8 +668,15 @@ h5 {
     .partners-opening {
         margin-top: 8rem;
     }
-
+    .buttons-container {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .buttons-container a {
+        color: #D4D7C4;
+    }
     footer {
         margin-bottom: 0;
+        background-size: cover;
     }
 }
